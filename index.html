@@ -2,22 +2,29 @@
 <html>
   <head>
     <title>Final Fantasy Forum</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
     />
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </head>
   <body>
     <h1 id="title">Final Fantasy Forum</h1>
     <div class="container">
-    <p id="description">Let's get you signed up!</p>
-    <form id="survey-form" name="survey-form">
+      <p id="description">Let's get you signed up!</p>
+      <form id="survey-form" name="survey-form">
+        <div id="name-field">
+          <label for="name" id="name-label">* Name:</label>
+          <input
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            type="text"
+          />
+        </div>
+        <br />
+      </form>
     </div>
-    </form>
   </body>
 </html>
