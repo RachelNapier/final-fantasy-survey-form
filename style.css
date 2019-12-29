@@ -1,7 +1,16 @@
-body {
-    background-image: url(final-fantasy-survey-form.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: fixed;
+html {
+  background: url(final-fantasy.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#title {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  padding: 0.3em 0em;
+  margin: 0px;
 }
