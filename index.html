@@ -15,12 +15,34 @@
       <p id="description">Let's get you signed up!</p>
       <form id="survey-form" name="survey-form">
         <div id="name-field">
-          <label for="name" id="name-label">* Name:</label>
+          <label for="name" id="name-label">Name:</label>
           <input
             id="name"
             name="name"
             placeholder="Enter your name"
             type="text"
+          />
+        </div>
+        <br />
+        <div id="age">
+          <label for="age" id="number-label">Age:</label>
+          <input
+            id="number"
+            max="125"
+            min="18"
+            name="age"
+            placeholder="Age"
+            type="number"
+          />
+        </div>
+        <br />
+        <div id="email-field">
+          <label for="email" id="email-label">Username (Email):</label>
+          <input
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            type="email"
           />
         </div>
         <br />
