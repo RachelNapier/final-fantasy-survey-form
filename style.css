@@ -14,3 +14,23 @@ html {
   padding: 0.3em 0em;
   margin: 0px;
 }
+
+#survey-form {	
+	font-family: "Fira Sans", san-serif;
+	font-size: 18px;
+	padding: 25px;
+	background-repeat: no-repeat;
+	background-size: auto;
+	text-align: center;
+}
+
+.container {
+	border: 1px solid black;
+	max-width: 10in;
+	font-size: 10px;
+	font-family: 'Fira Sans', sans-serif;
+	text-align: center;
+	background: rgba(204, 204, 204, 0.8);
+	margin: auto;
+	padding: 1px;
+}
