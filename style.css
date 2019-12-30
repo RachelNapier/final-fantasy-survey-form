@@ -56,3 +56,17 @@ html {
   grid-column-gap: 10px;
   padding: 0px 0px 10px 0px;
 }
+
+#name-label,
+#email-label,
+#password-label,
+#number-label,
+#radiolist-label,
+#character-label,
+#textarea-label,
+#checklist-label {
+  width: 100%;
+  text-align: left;
+  padding: 4px 0px 0px 0px;
+  font-weight: bold;
+}
