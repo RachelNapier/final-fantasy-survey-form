@@ -7,7 +7,6 @@
       href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </head>
   <body>
     <h1 id="title">Final Fantasy Forum</h1>
@@ -21,6 +20,7 @@
             name="name"
             placeholder="Enter your name"
             type="text"
+            required=""
           />
         </div>
         <br />
@@ -33,6 +33,7 @@
             name="age"
             placeholder="Age"
             type="number"
+            required=""
           />
         </div>
         <br />
@@ -43,6 +44,7 @@
             name="email"
             placeholder="Enter your Email"
             type="email"
+            required=""
           />
         </div>
         <br />
@@ -53,6 +55,8 @@
             name="password"
             placeholder="Enter a password"
             type="password"
+            minlength="8"
+            required=""
           />
         </div>
         <br />
@@ -93,8 +97,64 @@
               >
             </p>
           </div>
+          <div id="dropdown">
+            <label for="character" id="character-label"
+              >Who is your favorite Final Fantasy VII character?</label
+            >
+            <select id="character">
+              <option disabled selected>
+                Select an option
+              </option>
+              <option>
+                Cloud
+              </option>
+              <option>
+                Vincent
+              </option>
+              <option>
+                Sid
+              </option>
+              <option>
+                Yufi
+              </option>
+              <option>
+                Tifa
+              </option>
+              <option>
+                Aerith
+              </option>
+              <option>
+                Barret
+              </option>
+              <option>
+                Red XIII
+              </option>
+              <option>
+                Cait Sith
+              </option>
+              <option>
+                Sephiroth
+              </option>
+              <option>
+                Not listed/Other
+              </option>
+            </select>
+          </div>
+          <br />
+        </div>
+        <div id="textarea" style="margin-bottom: 32px">
+          <label for="textarea" id="textarea-label"
+            >If not listed, who is your favorite VII character?</label
+          >
+          <textarea
+            cols="50"
+            name="textarea"
+            placeholder="Enter your comment here..."
+            rows="4"
+          ></textarea>
         </div>
       </form>
     </div>
   </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
