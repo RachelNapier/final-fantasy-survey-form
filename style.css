@@ -15,29 +15,44 @@ html {
   margin: 0px;
 }
 
-#survey-form {	
-	font-family: "Fira Sans", san-serif;
-	font-size: 18px;
-	padding: 25px;
-	background-repeat: no-repeat;
-	background-size: auto;
-	text-align: center;
+#survey-form {
+  font-family: "Fira Sans", san-serif;
+  font-size: 18px;
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  text-align: center;
 }
 
 .container {
-	border: 1px solid black;
-	max-width: 10in;
-	font-size: 10px;
-	font-family: 'Fira Sans', sans-serif;
-	text-align: center;
-	background: rgba(204, 204, 204, 0.8);
-	margin: auto;
-	padding: 1px;
+  border: 1px solid black;
+  max-width: 10in;
+  font-size: 10px;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  background: rgba(204, 204, 204, 0.8);
+  margin: auto;
+  padding: 1px;
 }
 
 #description {
-	font-size: 20px;
-	font-family: 'Fira Sans', monospace;
-	font-weight: bold;
-	border: px solid black;
+  font-size: 20px;
+  font-family: "Fira Sans", monospace;
+  font-weight: bold;
+  border: px solid black;
+}
+
+#name-field,
+#age-label,
+#email-field,
+#password-field,
+#age,
+#radio-buttons,
+#dropdown,
+#textarea,
+#checkboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  padding: 0px 0px 10px 0px;
 }
