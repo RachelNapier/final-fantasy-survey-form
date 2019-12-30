@@ -34,3 +34,10 @@ html {
 	margin: auto;
 	padding: 1px;
 }
+
+#description {
+	font-size: 20px;
+	font-family: 'Fira Sans', monospace;
+	font-weight: bold;
+	border: px solid black;
+}
