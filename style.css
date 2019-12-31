@@ -82,3 +82,12 @@ textarea[name="textarea"] {
   outline: none;
   border-radius: 5px;
 }
+
+select {
+  width: 50%;
+  padding: 4px;
+}
+
+p {
+  margin: 0px 0px 5px 0px;
+}
