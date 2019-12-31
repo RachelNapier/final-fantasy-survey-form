@@ -106,3 +106,47 @@ p {
   color: white;
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  #name-field,
+  #age,
+  #email-field,
+  #password-field,
+  #dropdown,
+  #radio-buttons,
+  #textarea,
+  #checkboxes {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #name-label,
+  #number-label,
+  #email-label,
+  #password-label,
+  #character-label,
+  #radiolist-label,
+  #textarea-label,
+  #checklist-label {
+    width: 100%;
+    text-align: left;
+    padding: 4px 0px 0px 0px;
+  }
+
+  input[name="name"],
+  input[name="age"],
+  input[name="email"],
+  input[name="password"] textarea[name="textarea"] {
+    width: 90%;
+    padding: 4px;
+  }
+
+  select {
+    width: 50%;
+    padding: 4px;
+  }
+
+  p {
+    margin: 0px 0px 18px 0px;
+  }
+}
