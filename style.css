@@ -91,3 +91,18 @@ select {
 p {
   margin: 0px 0px 5px 0px;
 }
+
+.button {
+  background-color: rgb(5, 33, 44);
+  padding: 8px 16px 8px 16px;
+  border-radius: 2px;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+.button:hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
