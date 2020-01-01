@@ -57,6 +57,7 @@ html {
   padding: 0px 0px 10px 0px;
 }
 
+/* Labels */
 #name-label,
 #email-label,
 #password-label,
@@ -71,6 +72,7 @@ html {
   font-weight: bold;
 }
 
+/* Inputs */
 input[name="name"],
 input[name="age"],
 input[name="email"],
@@ -107,6 +109,7 @@ p {
   cursor: pointer;
 }
 
+/* Responsive styles */
 @media (max-width: 600px) {
   #name-field,
   #age,
