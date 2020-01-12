@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Fantasy Forum</title>
+    <!-- ================================== StyleSheet ================================================ -->
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- ================================== Google Font import ======================================== -->
     <link
       href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap"
       rel="stylesheet"
@@ -10,253 +14,245 @@
   </head>
   <body>
     <main>
-    <h1 id="title">Final Fantasy Forum</h1>
-    <div class="container">
-      <p id="description">Let's get you signed up!</p>
-      <form id="survey-form" name="survey-form">
-        <div id="name-field">
-          <label for="name" id="name-label">Name:</label>
-          <input
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            type="text"
-            required=""
-          />
-        </div>
-        <br />
-        <div id="age">
-          <label for="age" id="number-label">Age:</label>
-          <input
-            id="number"
-            max="125"
-            min="18"
-            name="age"
-            placeholder="Age"
-            type="number"
-            required=""
-          />
-        </div>
-        <br />
-        <div id="email-field">
-          <label for="email" id="email-label">Username (Email):</label>
-          <input
-            id="email"
-            name="email"
-            placeholder="Enter your Email"
-            type="email"
-            required=""
-          />
-        </div>
-        <br />
-        <div id="password-field">
-          <label for="password" id="password-label">Password:</label>
-          <input
-            id="password"
-            name="password"
-            placeholder="Enter a Password"
-            type="password"
-            minlength="8"
-            required=""
-          />
-        </div>
-        <br />
-        <!-- Gender Selection -->
-        <div id="radio-buttons">
-          <label for="radiolist" id="radiolist-label">Gender:</label>
-          <div
-            id="radiolist"
-            style="text-align: left; padding: 4px 0px 0px 0px;"
-          >
-            <div>
-              <label for="Female"
-                ><input
-                  id="Female"
-                  name="radio-buttons"
-                  type="radio"
-                  value="Female"
-                />Female</label
-              >
-            </div>
-            <div>
-              <label for="Male"
-                ><input
-                  id="Male"
-                  name="radio-buttons"
-                  type="radio"
-                  value="Male"
-                />Male</label
-              >
-            </div>
-            <div>
-              <label for="Prefer_not_to_say"
-                ><input
-                  id="Prefer_not_to_say"
-                  name="radio-buttons"
-                  type="radio"
-                  value="Prefer not to say"
-                />Prefer not to say</label
-              >
+      <h1 id="title">Final Fantasy Forum</h1>
+      <div class="container">
+        <p id="description">Let's get you signed up!</p>
+        <form id="survey-form" name="survey-form">
+          <div id="name-field">
+            <label for="name" id="name-label">Name:</label>
+            <input
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              type="text"
+              required=""
+            />
+          </div>
+          <div id="age">
+            <label for="age" id="number-label">Age:</label>
+            <input
+              id="number"
+              max="125"
+              min="18"
+              name="age"
+              placeholder="Age"
+              type="number"
+              required=""
+            />
+          </div>
+          <div id="email-field">
+            <label for="email" id="email-label">Username (Email):</label>
+            <input
+              id="email"
+              name="email"
+              placeholder="Enter your Email"
+              type="email"
+              required=""
+            />
+          </div>
+          <div id="password-field">
+            <label for="password" id="password-label">Password:</label>
+            <input
+              id="password"
+              name="password"
+              placeholder="Enter a Password"
+              type="password"
+              minlength="8"
+              required=""
+            />
+          </div>
+          <div id="radio-buttons">
+            <label for="radiolist" id="radiolist-label">Gender:</label>
+            <div
+              id="radiolist"
+              style="text-align: left; padding: 4px 0px 0px 0px;"
+            >
+              <div>
+                <label for="Female"
+                  ><input
+                    id="Female"
+                    name="radio-buttons"
+                    type="radio"
+                    value="Female"
+                  />Female</label
+                >
+              </div>
+              <div>
+                <label for="Male"
+                  ><input
+                    id="Male"
+                    name="radio-buttons"
+                    type="radio"
+                    value="Male"
+                  />Male</label
+                >
+              </div>
+              <div>
+                <label for="Prefer_not_to_say"
+                  ><input
+                    id="Prefer_not_to_say"
+                    name="radio-buttons"
+                    type="radio"
+                    value="Prefer not to say"
+                  />Prefer not to say</label
+                >
+              </div>
             </div>
           </div>
-          <!-- Dropdown Characters list -->
-        </div>
-        <div id="dropdown">
-          <label for="character" id="character-label"
-            >Who is your favorite Final Fantasy VII character?</label
-          >
-          <select id="character">
-            <option disabled selected>
-              Select an option
-            </option>
-            <option>
-              Cloud
-            </option>
-            <option>
-              Vincent
-            </option>
-            <option>
-              Sid
-            </option>
-            <option>
-              Yufi
-            </option>
-            <option>
-              Tifa
-            </option>
-            <option>
-              Aerith
-            </option>
-            <option>
-              Barret
-            </option>
-            <option>
-              Red XIII
-            </option>
-            <option>
-              Cait Sith
-            </option>
-            <option>
-              Sephiroth
-            </option>
-            <option>
-              Not listed/Other
-            </option>
-          </select>
-        </div>
-        <div id="textarea" style="margin-bottom: 32px">
-          <label for="textarea" id="textarea-label"
-            >If not listed, who is your favorite VII CSharacter?</label
-          >
-          <textarea
-            cols="50"
-            name="textarea"
-            placeholder="Enter your comment here..."
-            rows="4"
-          ></textarea>
-        </div>
-        <!-- Checklist labels/inputs -->
-        <div id="checkboxes">
-          <label for="checklist" id="checklist-label"
-            >What are your favorite Summons?<br />
-            (Check all that apply):</label
-          >
-          <div
-            id="checklist"
-            style="text-align: left; padding: 4px 0px 0px 0px;"
-          >
-            <div>
-              <label for="shiva"
-                ><input
-                  id="shiva"
-                  name="checkboxes"
-                  type="checkbox"
-                  value="shiva"
-                />Shiva</label
-              >
-            </div>
-            <div>
-              <label for="Ifrit"
-                ><input
-                  id="Ifrit"
-                  name="checkboxes"
-                  type="checkbox"
-                  value="Ifrit"
-                />Ifrit</label
-              >
-            </div>
-            <div>
-              <label for="ramuh"
-                ><input
-                  id="ramuh"
-                  name="checkboxes"
-                  type="checkbox"
-                  value="ramuh"
-                />Ramuh</label
-              >
-            </div>
-            <div>
-              <label for="bahamut"
-                ><input
-                  id="bahamut"
-                  name="checkboxes"
-                  type="checkbox"
-                  value="bahamut"
-                />Bahamut</label
-              >
-            </div>
-            <div>
-              <label for="odin"
-                ><input id="odin" type="checkbox" value="odin" />Odin</label
-              >
-            </div>
-            <div>
-              <label for="hades"
-                ><input
-                  id="hades"
-                  name="checkboxes"
-                  type="checkbox"
-                  value="hades"
-                />Hades</label
-              >
-            </div>
-            <div>
-              <label for="alexander"
-                ><input
-                  id="alexander"
-                  name="checkboxes"
-                  type="checkbox"
-                  value="alexander"
-                />Alexander</label
-              >
-            </div>
-            <div>
-              <label for="phoenix"
-                ><input
-                  id="phoenix"
-                  name="checkboxes"
-                  type="checkbox"
-                  value="phoenix"
-                />Phoenix</label
-              >
-            </div>
-            <div>
-              <label for="Other"
-                ><input
-                  id="Other"
-                  name="checkboxes"
-                  type="checkbox"
-                  value="Other"
-                />Other</label
-              >
+          <div id="dropdown">
+            <label for="character" id="character-label"
+              >Who is your favorite Final Fantasy VII character?</label
+            >
+            <select id="character">
+              <option disabled selected>
+                Select an option
+              </option>
+              <option>
+                Cloud
+              </option>
+              <option>
+                Vincent
+              </option>
+              <option>
+                Sid
+              </option>
+              <option>
+                Yufi
+              </option>
+              <option>
+                Tifa
+              </option>
+              <option>
+                Aerith
+              </option>
+              <option>
+                Barret
+              </option>
+              <option>
+                Red XIII
+              </option>
+              <option>
+                Cait Sith
+              </option>
+              <option>
+                Sephiroth
+              </option>
+              <option>
+                Not listed/Other
+              </option>
+            </select>
+          </div>
+          <div id="textarea" style="margin-bottom: 32px">
+            <label for="textarea" id="textarea-label"
+              >If not listed, who is your favorite VII CSharacter?</label
+            >
+            <textarea
+              cols="50"
+              name="textarea"
+              placeholder="Enter your comment here..."
+              rows="4"
+            ></textarea>
+          </div>
+          <div id="checkboxes">
+            <label for="checklist" id="checklist-label"
+              >What are your favorite Sum (Check all that apply):</label
+            >
+            <div
+              id="checklist"
+              style="text-align: left; padding: 4px 0px 0px 0px;"
+            >
+              <div>
+                <label for="shiva"
+                  ><input
+                    id="shiva"
+                    name="checkboxes"
+                    type="checkbox"
+                    value="shiva"
+                  />Shiva</label
+                >
+              </div>
+              <div>
+                <label for="Ifrit"
+                  ><input
+                    id="Ifrit"
+                    name="checkboxes"
+                    type="checkbox"
+                    value="Ifrit"
+                  />Ifrit</label
+                >
+              </div>
+              <div>
+                <label for="ramuh"
+                  ><input
+                    id="ramuh"
+                    name="checkboxes"
+                    type="checkbox"
+                    value="ramuh"
+                  />Ramuh</label
+                >
+              </div>
+              <div>
+                <label for="bahamut"
+                  ><input
+                    id="bahamut"
+                    name="checkboxes"
+                    type="checkbox"
+                    value="bahamut"
+                  />Bahamut</label
+                >
+              </div>
+              <div>
+                <label for="odin"
+                  ><input id="odin" type="checkbox" value="odin" />Odin</label
+                >
+              </div>
+              <div>
+                <label for="hades"
+                  ><input
+                    id="hades"
+                    name="checkboxes"
+                    type="checkbox"
+                    value="hades"
+                  />Hades</label
+                >
+              </div>
+              <div>
+                <label for="alexander"
+                  ><input
+                    id="alexander"
+                    name="checkboxes"
+                    type="checkbox"
+                    value="alexander"
+                  />Alexander</label
+                >
+              </div>
+              <div>
+                <label for="phoenix"
+                  ><input
+                    id="phoenix"
+                    name="checkboxes"
+                    type="checkbox"
+                    value="phoenix"
+                  />Phoenix</label
+                >
+              </div>
+              <div>
+                <label for="Other"
+                  ><input
+                    id="Other"
+                    name="checkboxes"
+                    type="checkbox"
+                    value="Other"
+                  />Other</label
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <button class="button" id="submit" type="submit">Submit</button>
-      </form>
-    </div>
+          <button class="button" id="submit" type="submit">Submit</button>
+        </form>
+      </div>
     </main>
   </body>
-  <!-- FCC Cdn link -->
+  <!-- ================================== FCC Cdn link ================================================ -->
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
