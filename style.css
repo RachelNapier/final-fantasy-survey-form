@@ -1,10 +1,15 @@
-html {
+
+/*======================================================================
+GLOBAL STYLES
+=======================================================================*/
+body {
   background: url(final-fantasy.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
 
 #title {
   font-size: 64px;
@@ -24,6 +29,9 @@ html {
   text-align: center;
 }
 
+/*======================================================================
+GLOBAL STYLES
+=======================================================================*/
 .container {
   border: 1px solid black;
   max-width: 10in;
@@ -42,6 +50,9 @@ html {
   border: px solid black;
 }
 
+/*======================================================================
+Form styling
+=======================================================================*/
 #name-field,
 #age-label,
 #email-field,
@@ -54,10 +65,9 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
-  padding: 0px 0px 10px 0px;
+  padding-bottom: 10px;
 }
 
-/* Labels */
 #name-label,
 #email-label,
 #password-label,
@@ -68,11 +78,10 @@ html {
 #checklist-label {
   width: 100%;
   text-align: left;
-  padding: 4px 0px 0px 0px;
+  padding-left: 4px;
   font-weight: bold;
 }
 
-/* Inputs */
 input[name="name"],
 input[name="age"],
 input[name="email"],
@@ -101,15 +110,16 @@ p {
   border: none;
   font-size: 24px;
   color: white;
+  cursor: pointer;
 }
 
 .button:hover {
   background-color: grey;
-  color: white;
-  cursor: pointer;
 }
 
-/* Responsive styles */
+/*======================================================================
+Responsive Styles
+=======================================================================*/
 @media (max-width: 600px) {
   #name-field,
   #age,
@@ -133,7 +143,7 @@ p {
   #checklist-label {
     width: 100%;
     text-align: left;
-    padding: 4px 0px 0px 0px;
+    padding-top: 4px;
   }
 
   input[name="name"],
