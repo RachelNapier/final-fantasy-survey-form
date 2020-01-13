@@ -1,4 +1,3 @@
-
 /*======================================================================
 GLOBAL STYLES
 =======================================================================*/
@@ -9,15 +8,17 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
 }
 
-#title, #survey-form {
+#title,
+#survey-form,
+.container {
   text-align: center;
 }
 
 #title {
   font-size: 64px;
-  font-weight: bold;
   padding: 0.3em 0em;
   margin: 0px;
 }
@@ -32,20 +33,21 @@ body {
 /*======================================================================
 GLOBAL STYLES
 =======================================================================*/
-.container {
+.container,
+#discription {
   border: 1px solid black;
+}
+
+.container {
   max-width: 10in;
-  font-size: 10px;
-  text-align: center;
   background: rgba(204, 204, 204, 0.8);
   margin: auto;
   padding: 1px;
 }
 
-#description {
+#description,
+.button {
   font-size: 20px;
-  font-weight: bold;
-  border: px solid black;
 }
 
 /*======================================================================
@@ -66,18 +68,10 @@ Form styling
   padding-bottom: 10px;
 }
 
-#name-label,
-#email-label,
-#password-label,
-#number-label,
-#radiolist-label,
-#character-label,
-#textarea-label,
-#checklist-label {
+label {
   width: 100%;
   text-align: left;
   padding-left: 4px;
-  font-weight: bold;
 }
 
 input[name="name"],
@@ -98,15 +92,14 @@ select {
 }
 
 div {
-  margin: 0px 0px 5px 0px;
+  margin-bottom: 5px;
 }
 
 .button {
   background-color: rgb(5, 33, 44);
-  padding: 8px 16px 8px 16px;
+  padding: 8px 16px;
   border-radius: 2px;
   border: none;
-  font-size: 24px;
   color: white;
   cursor: pointer;
 }
@@ -131,14 +124,7 @@ Responsive Styles
     grid-template-columns: 1fr;
   }
 
-  #name-label,
-  #number-label,
-  #email-label,
-  #password-label,
-  #character-label,
-  #radiolist-label,
-  #textarea-label,
-  #checklist-label {
+  label {
     width: 100%;
     text-align: left;
     padding-top: 4px;
