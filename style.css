@@ -74,6 +74,11 @@ label {
   padding-left: 4px;
 }
 
+#radiolist {
+  text-align: left; 
+  padding-top: 4px;
+}
+
 input[name="name"],
 input[name="age"],
 input[name="email"],
@@ -144,6 +149,6 @@ Responsive Styles
   }
 
   p {
-    margin: 0px 0px 18px 0px;
+    margin-bottom: 18px;
   }
 }
