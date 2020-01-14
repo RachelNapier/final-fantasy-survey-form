@@ -98,7 +98,7 @@ select {
 }
 
 div {
-  margin-bottom: 18px;
+  margin-bottom: 10px
 }
 
 .button {
@@ -148,6 +148,6 @@ Responsive Styles
   }
 
   div {
-    margin-bottom: 5px;
+    margin-bottom: 18px;
   }
 }
