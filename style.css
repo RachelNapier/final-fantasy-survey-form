@@ -63,9 +63,7 @@ Form styling
 #textarea,
 #checkboxes {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
-  padding-bottom: 10px;
+  grid-template-columns: 1fr;
 }
 
 label {
@@ -75,7 +73,7 @@ label {
 }
 
 #radiolist {
-  text-align: left; 
+  text-align: left;
   padding-top: 4px;
 }
 
@@ -116,7 +114,7 @@ div {
 /*======================================================================
 Responsive Styles
 =======================================================================*/
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   #name-field,
   #age,
   #email-field,
@@ -126,13 +124,9 @@ Responsive Styles
   #textarea,
   #checkboxes {
     display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  label {
-    width: 100%;
-    text-align: left;
-    padding-top: 4px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    padding-bottom: 10px;
   }
 
   input[name="name"],
