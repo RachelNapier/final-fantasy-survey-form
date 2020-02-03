@@ -117,7 +117,7 @@ div {
 /*======================================================================
 Responsive Styles
 =======================================================================*/
-@media (min-width: 600px) {
+@media (min-width: 1281px) {
   #title {
     font-size: 40px;
   }
@@ -139,7 +139,8 @@ Responsive Styles
   input[name="name"],
   input[name="age"],
   input[name="email"],
-  input[name="password"] textarea[name="textarea"] {
+  input[name="password"]
+  textarea[name="textarea"] {
     width: 100%;
     max-width: 90%;
     padding: 4px;
