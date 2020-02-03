@@ -2,37 +2,19 @@
 GLOBAL STYLES
 =======================================================================*/
 body {
-  background: url(final-fantasy.jpg) no-repeat center center fixed;
+  background: url(images/final-fantasy.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-size: 100% 100%;
   font-family: "Fira Sans", sans-serif;
-  font-weight: bold;
 }
 
 #title,
 #survey-form,
 .container {
   text-align: center;
-}
-
-#title {
-  font-size: 30px;
-  padding: 0.3em 0em;
-  color: rgb(1, 1, 26);
-  text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc,
-    1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc,
-    3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc,
-    5px 6px 1px #eee, 7px 6px 1px #ccc;
-}
-
-#survey-form {
-  font-size: 18px;
-  padding: 25px;
-  background-repeat: no-repeat;
-  background-size: auto;
 }
 
 /*======================================================================
@@ -50,14 +32,32 @@ GLOBAL STYLES
   padding: 1px;
 }
 
-#description,
-.button {
-  font-size: 20px;
-}
-
 /*======================================================================
 Form styling
 =======================================================================*/
+#title {
+  font-size: 30px;
+  padding: 0.3em 0em;
+  color: rgb(1, 1, 26);
+  text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc,
+    1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc,
+    3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc,
+    5px 6px 1px #eee, 7px 6px 1px #ccc;
+}
+
+#survey-form {
+  font-size: 18px;
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#description,
+.button {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #name-field,
 #age-label,
 #email-field,
@@ -72,15 +72,15 @@ Form styling
   padding-bottom: 0.3em;
 }
 
+#radiolist,
 label {
-  width: 100%;
-  text-align: left;
-  padding-left: 4px;
-}
-
-#radiolist {
   text-align: left;
   padding-top: 4px;
+}
+
+label {
+  width: 100%;
+  padding-left: 4px;
 }
 
 input[name="name"],
@@ -98,7 +98,7 @@ select {
 }
 
 div {
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .button {
