@@ -8,7 +8,7 @@
 <br />
 <p align="center">
   <a href="https://rachelnapier.github.io/final-fantasy-survery-form/">
-    <img src="images/ff7-icon.jpg" alt="Logo" width="120" height="120">
+    <img src="images/ff7-icon.jpg" alt="Logo" width="160" height="160">
   </a>
 
   <h3 align="center"><strong>Final Fantasy Survery Form
